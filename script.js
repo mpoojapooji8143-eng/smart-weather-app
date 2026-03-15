@@ -1,4 +1,4 @@
-const apiKey="d786316630c5d4e5a09d72a0ae43903e";
+const apiKey="enter  your code";
 
 function getWeather(){
 
