@@ -1,0 +1,125 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+/* FIRST BACKGROUND */
+
+background-image:url("images/bg.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+transition:1s;
+
+}
+
+/* CARD */
+
+.container{
+
+width:360px;
+
+background:rgba(255,255,255,0.9);
+
+padding:30px;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:
+0 0 20px #00c3ff,
+0 0 40px #00c3ff,
+0 0 60px #00c3ff;
+
+animation:glow 3s infinite alternate;
+
+}
+
+@keyframes glow{
+
+from{
+box-shadow:0 0 20px #00c3ff;
+}
+
+to{
+box-shadow:0 0 50px #007bff;
+}
+
+}
+
+input{
+
+width:100%;
+
+padding:12px;
+
+margin:15px 0;
+
+border-radius:8px;
+
+border:1px solid #ccc;
+
+}
+
+.buttons{
+
+display:flex;
+
+gap:10px;
+
+justify-content:center;
+
+}
+
+button{
+
+padding:10px 15px;
+
+border:none;
+
+border-radius:8px;
+
+background:#007bff;
+
+color:white;
+
+cursor:pointer;
+
+}
+
+button:hover{
+
+transform:scale(1.05);
+
+}
+
+.weather-icon{
+
+width:100px;
+
+}
+
+.temp{
+
+font-size:35px;
+
+font-weight:bold;
+
+margin:10px 0;
+
+}
